@@ -67,7 +67,7 @@ public class UserCallerUtil {
 		return cachedUsers;
 	}
 	@Bean
-//	@LoadBalanced
+	@LoadBalanced
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
